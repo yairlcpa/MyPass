@@ -1,0 +1,26 @@
+/* GLOBAL */
+:fullscreen, ::backdrop {background-color: #333;}
+body { overscroll-behavior-y: contain; } 
+* {margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent;} ::-webkit-scrollbar {display:none;}
+.text-info{color:#3d7bf9 !important;}
+.copy-color{background:#3AC89B; color:#fff;} .move-color{background:#7A789B; color:#fff;} .exit-app{color:#ff5454}
+b {cursor:pointer; font-size:1.3rem; display:flex; align-items:center; justify-content:center;}
+.fs-small {font-size: 0.85rem;} .select-none{user-select: none;}
+.rtl {direction:rtl;} .ltr {direction:ltr;}
+.w-10 {width:10%}.w-20{width:20%}.w-30{width:30%}.w-40{width:40%}.w-60{width:60%}.w-70{width:70%}.w-80{width:80%}.w-90{width:90%}
+.h-10 {height:10%}.h-20{height:20%}.h-30{height:30%}.h-40{height:40%}.h-60{height:60%}.h-70{height:70%}.h-80{height:80%}.h-90{height:90%}
+.pointer {cursor:pointer;} .trns-03 {transition: 0.3s;} .rtl {direction: rtl;} .ltr {direction: ltr;}
+.flex {display:flex; flex-direction:row;} .flex-column {display:flex; flex-direction:column;} .flex-center {display:flex; align-items:center; justify-content:center;}
+.app {position:relative; height:100vh; width:min(100vw,600px); overflow:hidden;}
+.page {position:absolute; width:100%; height:100%; display:flex; flex-direction:column; transition:0.3s;} 
+.page-hide {translate:0 50px; z-index:-2; opacity:0;}
+/* ELEMENTS */
+.mask {z-index:-5; opacity:0; transition: 0.3s;} .mask-show {z-index:9; opacity:1; background:rgba(0,0,0,0.7);}
+.action {position:absolute; width:100%; bottom:-100%; opacity:0; transition: 0.3s;} 
+.action-show {z-index:9;bottom:0%; opacity:1;}
+.msgbox {width:75%; translate:0 50px; opacity:0; transition: 0.3s;} .msgbox-show {z-index:9; translate:0 -50px; opacity:1;}
+.side-menu {position:absolute; width:80%; height:100%; left:100%; opacity:0.5; transition: 0.3s;} .side-menu-show {z-index:9; left:20%; opacity:1;}
+.fab-btn {position:absolute; left:2rem; bottom:2rem; height:3rem; width:3rem; font-size:1.5rem; border-radius:50%; cursor:pointer;}
+.fab-btn-right {position:absolute; right:2rem; bottom:2rem; height:3rem; width:3rem; font-size:1.5rem; border-radius:50%; cursor:pointer;}
+.toast-box {position:absolute; top:90%; z-index:-5; opacity:0; transition:0.8s;}  .toast-show {z-index:20; top:90%; opacity:1;}
+button:active{border: 2px solid yellow;}
